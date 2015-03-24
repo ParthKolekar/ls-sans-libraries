@@ -10,7 +10,7 @@ BINDIR = $(PREFIX)/bin
 %.o : %.cpp
 	$(CC) $(DEVEL_FLAGS) -c $^
 
-$(OBJ) : *.o
+$(OBJ) : myls.o
 	$(CC) $(DEVEL_FLAGS) $^ -o $@ $(LFLAGS)
 
 clean :
